@@ -11,3 +11,4 @@ import { TasksComponent } from './tasks/tasks.component';
     imports: [ HeaderComponent, UserComponent, TasksComponent]
 })
 export class AppModule {}
+//i acidentally made debug "1" twice, sorry if that confused you
