@@ -17,7 +17,7 @@ export class AppComponent {
 
   get selectedUser() {
     let tempPerson = {
-      id: 0,
+      id: "0",
       name: 'Click a person to continue',
       avatar: 'user-1.jpg',
     };

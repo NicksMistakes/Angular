@@ -13,68 +13,68 @@ export class TasksComponent {
   tasks = [
   {
     id: 't1',
-    user: 'u0',
+    userId: 'u0',
     title: 'Master Angular',
     summary: 'Learn all the basic and advanced features of Angular & how to apply them.',
-    duedate: '2017-3-18',
+    dueDate: '2017-3-18',
   },
   {
     id: 't1',
-    user: 'u1',
+    userId: 'u1',
     title: 'Master CSS',
     summary: 'Learn all the basic and advanced features of CSS & how to apply them.',
-    duedate: '2020-6-17',
+    dueDate: '2020-6-17',
   }, 
   {
     id: 't1',
-    user: 'u2',
+    userId: 'u2',
     title: 'Master TypeScript',
     summary: 'Learn all the basic and advanced features of TypeScript & how to apply them.',
-    duedate: '2021-7-25',
+    dueDate: '2021-7-25',
   },
   {
     id: 't1',
-    user: 'u3',
+    userId: 'u3',
     title: 'Master React',
     summary: 'Learn all the basic and advanced features of React & how to apply them.',
-    duedate: '2022-11-07',
+    dueDate: '2022-11-07',
   },
   {
     id: 't1',
-    user: 'u4',
+    userId: 'u4',
     title: 'Master Python',
     summary: 'Learn all the basic and advanced features of Python & how to apply them.',
-    duedate: '2024-12-31',
+    dueDate: '2024-12-31',
   },
   {
     id: 't1',
-    user: 'u5',
+    userId: 'u5',
     title: 'Master C',
     summary: 'Learn all the basic and advanced features of C & how to apply them.',
-    duedate: '2025-6-08',
+    dueDate: '2025-6-08',
   },
   {
     id: 't1',
-    user: 'u4',
+    userId: 'u4',
     title: 'Master C#',
     summary: 'Learn all the basic and advanced features of C# & how to apply them.',
-    duedate: '2027-5-06',
+    dueDate: '2027-5-06',
   },
   {
     id: 't1',
-    user: 'u5',
+    userId: 'u5',
     title: 'Master SwiftUi',
     summary: 'Learn all the basic and advanced features of SwiftUi & how to apply them.',
-    duedate: '2026-10-05',
+    dueDate: '2026-10-05',
   },
   {
     id: 't1',
-    user: 'u6',
+    userId: 'u6',
     title: 'Master JavaScript',
     summary: 'Learn all the basic and advanced features of JavaScript & how to apply them.',
-    duedate: '2023-2-8',
+    dueDate: '2023-2-08',
   }    ]
   get selectedUserTasks() {
-    return this.tasks.filter((task) => task.user === this.userId);
+    return this.tasks.filter((task) => task.userId === this.userId);
   }
 }
