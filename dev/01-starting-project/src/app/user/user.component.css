@@ -1,16 +1,11 @@
-div {
-  border-radius: 6px;
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-}
 
 button {
   display: flex;
   align-items: center;
   gap: 0.5rem;
   padding: 0.35rem 0.5rem;
-  background-color: #433352;
-  color: #c3b3d1;
+  background-color: #262ec9;
+  color: #221078;
   border: none;
   font: inherit;
   cursor: pointer;
@@ -22,8 +17,12 @@ button {
 button:hover,
 button:active,
 .active {
-  background-color: #65b3ea;
-  color: #354ab067;
+  background-color: linear-gradient(
+    to bottom,
+    #5c839e,
+    #160b4f,
+    );
+  color: #cbd4ff67;
 }
 
 img {

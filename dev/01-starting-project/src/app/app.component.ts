@@ -12,17 +12,17 @@ import { TaskComponent } from './tasks/task/task.component';
   styleUrl: './app.component.css',
 })
 export class AppComponent {
-  user = DUMMY_USERS;
+  users = DUMMY_USERS;
   selectedUserId?: string; //= "u1";
 
   get selectedUser() {
     let tempPerson = {
       id: "0",
-      name: 'Click a person to continue',
+      name: 'Click a person',
       avatar: 'user-1.jpg',
     };
     return (
-      this.user.find((user) => user.id === this.selectedUserId) ?? tempPerson
+      this.users.find((user) => user.id === this.selectedUserId) ?? tempPerson
     );
   }
   onSelectUser(id: string) {
