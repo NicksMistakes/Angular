@@ -1,6 +1,4 @@
-@if (isAddingTask) {
-    <app-new-task [userId]="userId" (close)="onCloseAddTask()" > </app-new-task>
-}
+<app-new-task *ngIf="isAddingTask" [userId]="userId" (close)="onCloseAddTask()"></app-new-task>
 
 <section id="tasks">
   <header>
@@ -9,11 +7,10 @@
       <button (click)="onStartAddTask()">Add Task</button>
     </menu>
   </header>
+
   <ul>
-    @for (task of selectedUserTasks; track $index) {
-        <li>
-            <app-task [task]="task" />
-        </li>
-        }
-    </ul>
-    </section>
+    <li *ngFor="let task of selectedUserTasks; let i = index">
+      <app-task [task]="task"></app-task>
+    </li>
+  </ul>
+</section>
